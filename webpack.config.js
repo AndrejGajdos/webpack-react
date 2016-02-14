@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var merge = require('webpack-merge');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var NpmInstallPlugin = require('npm-install-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 
 const TARGET = process.env.npm_lifecycle_event;
@@ -63,7 +64,12 @@ if (TARGET === 'dev' || !TARGET) {
     },
     output: {
       publicPath: 'http://localhost:8090/assets'
-    }
+    },
+    plugins: [
+      new NpmInstallPlugin({
+        save: true // --save
+      })
+    ]
   });
 }
 
