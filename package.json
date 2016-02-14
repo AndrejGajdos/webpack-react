@@ -30,6 +30,7 @@
     "less": "^2.6.0",
     "less-loader": "^2.2.2",
     "node-sass": "^3.4.2",
+    "npm-install-webpack-plugin": "^2.0.2",
     "postcss": "^5.0.15",
     "postcss-loader": "^0.8.1",
     "react": "^0.14.7",
