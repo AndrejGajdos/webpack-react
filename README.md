@@ -5,4 +5,4 @@ Example code for my blog post - http://andrejgajdos.com/setting-up-webpack-for-e
 
 ## License
 
-MIT (http://www.opensource.org/licenses/mit-license.php)
+MIT © [Andrej Gajdos](http://andrejgajdos.com)

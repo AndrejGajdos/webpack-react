@@ -1,11 +1,10 @@
 {
   "name": "webpack-react",
   "version": "0.0.0",
-  "description": "A sample project to demonstrate bundling ES6, React, SASS and Bootstrap with Webpack",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AndrejGajdos/webpack-react.git"
-  },
+  "description": "Bundling ES6, React, SASS and Bootstrap with Webpack",
+  "homepage": "http://github.com/AndrejGajdos/webpack-react.git",
+  "repository": "git://github.com/AndrejGajdos/webpack-react.git",
+  "author": "Andrej Gajdos <mail@andrejgajdos.com> (http://andrejgajdos.com/)",
   "main": "index.jsx",
   "scripts": {
     "build": "webpack -d",
@@ -13,8 +12,14 @@
     "serve": "./node_modules/.bin/http-server -p 8080",
     "dev": "webpack-dev-server -d --progress --colors --port 8090"
   },
+  "keywords": [
+    "webpack",
+    "react",
+    "es6",
+    "bootstrap"
+  ],
   "author": "Andrej Gajdos",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.5.2",
