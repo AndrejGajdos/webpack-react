@@ -21,7 +21,7 @@ var common = {
   module: {
     loaders: [{
       test: /\.js[x]?$/,
-      loaders: ['babel'],
+      loaders: ['babel-loader?presets[]=es2015&presets[]=react'],
       exclude: /(node_modules|bower_components)/
     }, {
       test: /\.css$/,
@@ -82,8 +82,7 @@ if (TARGET === 'build') {
     plugins: [
       new HtmlWebpackPlugin({
         title: 'Webpack-react',
-        template: 'index-template.html',
-        inject: 'body'
+        template: 'index-template.ejs'
       })
     ]
   });
