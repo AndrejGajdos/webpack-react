@@ -21,6 +21,7 @@
   "author": "Andrej Gajdos",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.3.7",
     "babel": "^6.5.2",
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.2",
