@@ -1,13 +1,13 @@
-var React = require('react');
-var buttonStyle = require('./button.scss');
+import React, {Component} from 'react';
 
-var bootstrap = require('bootstrap');
-var bootstrapStyle = require("bootstrap/dist/css/bootstrap.css");
+import './button.scss';
+import 'bootstrap';
+import "bootstrap/dist/css/bootstrap.css";
 
-export class Button extends React.Component {
-  render() {
-    return <button className="btn btn-info" type="button">
-      <span className="glyphicon glyphicon-refresh"></span>
-    </button>;
-  }
+export default class Button extends Component {
+    render() {
+        return <button className="btn btn-info" type="button">
+            <span className="glyphicon glyphicon-refresh"></span>Click me!!!
+        </button>;
+    }
 }
